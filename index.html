@@ -12,6 +12,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
     }
     form {
       background: white;
@@ -33,9 +34,10 @@
       border-radius: 8px;
       border: 1px solid #ccc;
       margin-top: 5px;
+      font-size: 15px;
     }
     button {
-      margin-top: 20px;
+      margin-top: 25px;
       width: 100%;
       background: #0b6b2f;
       color: white;
@@ -44,6 +46,7 @@
       border-radius: 8px;
       padding: 12px;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
     button:hover {
       background: #095626;
@@ -56,6 +59,10 @@
     <input type="hidden" name="form-name" value="actualiza-proteina">
 
     <h2 style="text-align:center; color:#0b6b2f;">Actualiza tu elección de proteína 🍽️</h2>
+
+    <!-- NUEVO CAMPO: Nombre completo -->
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez" />
 
     <label for="cedula">Número de cédula</label>
     <input type="text" id="cedula" name="cedula" required placeholder="Ej: 12345678" />
