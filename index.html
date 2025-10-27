@@ -55,12 +55,14 @@
 </head>
 <body>
 
-  <form name="actualiza-proteina" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="actualiza-proteina">
+  <form name="actualiza-proteina" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="actualiza-proteina" />
+    <p hidden>
+      <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+    </p>
 
     <h2 style="text-align:center; color:#0b6b2f;">Actualiza tu elección de proteína 🍽️</h2>
 
-    <!-- NUEVO CAMPO: Nombre completo -->
     <label for="nombre">Nombre completo</label>
     <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez" />
 
